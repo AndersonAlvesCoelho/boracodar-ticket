@@ -18,7 +18,7 @@ A [Rocketseat](https://boracodar.dev/) 🚀 como sempre, voando nas propostas de
 
 Você pode visualiza o layout do projeto pelo [figma](https://www.figma.com/community/file/1205146101173113980).
 
-
+Da uma olhada de como ficou : https://andersonalvescoelho.github.io/boracodar-ticket/
 -- 
 ### Conteúdos utilizados
 #boracodar
