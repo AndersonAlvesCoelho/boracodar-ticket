@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem === 10px */
+}
+
+body * {
+  /* border: 0.1rem solid red; */
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background: rgb(130, 87, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(130, 87, 229, 1) 0%,
+    rgba(39, 26, 69, 1) 100%
+  );
+
+  display: grid;
+  place-content: center;
+}
+
+hr {
+  width: 29.5rem;
+
+  background-color: #fff;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+strong {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.ticket {
+  transition: all .5s;
+  width: 32.7rem;
+  height: 56rem;
+
+  display: grid;
+  justify-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #ffffff;
+
+  line-height: 2.4rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.card-top {
+  width: 32.7rem;
+  height: 18.1rem;
+  gap: 2.4rem;
+
+  position: relative;
+  border-radius: 2.4rem 2.4rem 0 0;
+
+  background: #fff;
+  background: linear-gradient(0, transparent 0, transparent) top left,
+    linear-gradient(0, transparent 0, transparent) top right,
+    linear-gradient(0, transparent 0, transparent) bottom left,
+    linear-gradient(0, transparent 0, transparent) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(circle at 0 0, white 1.5rem, white 1.5rem),
+    radial-gradient(circle at 100% 0, white 1.5rem, white 1.5rem),
+    radial-gradient(circle at 0 100%, transparent 1.5rem, white 1.5rem),
+    radial-gradient(circle at 100% 100%, transparent 1.5rem, white 1.5rem);
+}
+
+.flight-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.4rem;
+
+  margin-top: 2.4rem;
+}
+
+.flight-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+
+.flight-path-arrival {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.flight-path-airplane {
+  background-image: url(./assets/airplane.svg);
+  background-size: cover;
+
+  position: absolute;
+
+  width: 22px;
+  height: 19px;
+}
+
+.card-middle {
+  width: 32.7rem;
+  height: 9.5rem;
+  gap: 8.1rem;
+  position: relative;
+
+  background: #fff;
+  background: linear-gradient(0, transparent 0, transparent) top left,
+    linear-gradient(0, transparent 0, transparent) top right,
+    linear-gradient(0, transparent 0, transparent) bottom left,
+    linear-gradient(0, transparent 0, transparent) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 0 0,
+      transparent 1.5rem,
+      white 1.5rem
+    ),
+    radial-gradient(circle at 100% 0, transparent 1.5rem, white 1.5rem),
+    radial-gradient(circle at 0 100%, transparent 1.5rem, white 1.5rem),
+    radial-gradient(circle at 100% 100%, transparent 1.5rem, white 1.5rem);
+}
+
+.card-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.4rem 3.2rem;
+  gap: 8.1rem;
+}
+
+.seat {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.card-bottom {
+  width: 32.7rem;
+  height: 26.9rem;
+  gap: 2.4rem;
+
+  position: relative;
+  border-radius: 0 0 2.4rem 2.4rem;
+
+  background: #fff;
+  background: linear-gradient(0, transparent 0, transparent) top left,
+    linear-gradient(0, transparent 0, transparent) top right,
+    linear-gradient(0, transparent 0, transparent) bottom left,
+    linear-gradient(0, transparent 0, transparent) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 0 0,
+      transparent 1.5rem,
+      white 1.5rem
+    ),
+    radial-gradient(circle at 100% 0, transparent 1.5rem, white 1.5rem),
+    radial-gradient(circle at 0 100%, white 1.5rem, white 1.5rem),
+    radial-gradient(circle at 100% 100%, white 1.5rem, white 1.5rem);
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 3.2rem;
+  gap: 2.4rem;
+}
+
+.boarding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.boarding-time strong {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.4rem 0.8rem;
+  gap: 0.8rem;
+
+  width: 5.4rem;
+  height: 2.7rem;
+
+  background: #633bbc;
+  border-radius: 0.8rem;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code img {
+  width: 14rem;
+  height: 14rem;
+}
+
+footer p{
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+
+/* CRIANDO ALGUNS EFEITOS  */
+
+.ticket:hover{
+ transform: scale(1.1);
+ transition: 500ms linear; 
+}

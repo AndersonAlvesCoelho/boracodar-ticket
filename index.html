@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ticket</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="ticket">
+      <p class="title">Cartão de embarque</p>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="flight-info">
+            <div class="flight-date">
+              <div class="flight-date-left">
+                <p>Voo</p>
+                <strong>RS995</strong>
+              </div>
+              <div class="flight-date-right">
+                <p>Data</p>
+                <strong>23/05/2023</strong>
+              </div>
+            </div>
+            <div class="flight-path">
+              <div class="flight-path-departure">
+                <p>São Paulo, Brasil</p>
+                <h1>GRU</h1>
+                <p>17:00</p>
+              </div>
+              <div class="flight-path-airplane"></div>
+              <div class="flight-path-arrival">
+                <p>São Francisco, EUA</p>
+                <h1>SFO</h1>
+                <p>04:48 <sup>+1</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="card-middle">
+          <div class="passanger-name">
+            <p>Passageiro</p>
+            <strong>Anderson Alves</strong>
+          </div>
+          <div class="seat">
+            <p>Assento</p>
+            <strong>28A</strong>
+          </div>
+        </div>
+        <hr />
+
+        <div class="card-bottom">
+          <div class="boarding">
+            <div class="boarding-info">
+              <div class="boarding-time">
+                <p>Embarque</p>
+                <strong class="time">16:15</strong>
+              </div>
+              <div class="terminal">
+                <p>Terminal</p>
+                <strong>2</strong>
+              </div>
+              <div class="gate">
+                <p>Portão</p>
+                <strong>15</strong>
+              </div>
+            </div>
+            <div class="qr-code">
+              <img
+                src="./assets/qr-code.png"
+                alt="QR Code do seu embarque"
+              />
+              <p>Grupo de embarque: 3</p>
+            </div>
+          </div>
+
+          <h5><strong>Atenção:</strong> o portão fecha 16:45</h5>
+        </div>
+      </div>
+
+      <footer>
+        <p>Qualquer problema procure o balcão de atendimento da sua companhia aérea.</p>
+      </footer>
+    </div>
+  </body>
+</html>
